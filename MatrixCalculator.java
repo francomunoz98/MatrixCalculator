@@ -39,4 +39,20 @@ public class MatrixCalculator {
 					lösung[i][j] = sum;
 					sum = 0;
 				}
+
+		//Section 3: Output Code
+		System.out.println("Matrix A + Matrix B is...");
+		for(int i=0; i<2; i++) {
+
+			for(int j=0; j<2; j++) {
+
+				System.out.print(lösung[i][j] + " ");
+
+			}
+
+				System.out.println();
+		scan.close();
 		}
+
+	}
+	
