@@ -12,17 +12,19 @@ public class MatrixCalculator {
 		lösung = new int [2][2];
 		sum = 0;
 		dif = 0;
+		det = 0;
 	}
 
-	public int Determinant(int A[][]){
+	public int Determinant(int mat[][]){
 		//Section 1: Matrix Values
 		System.out.print("Enter values for '2x2' Matrix: ");
 		for(int i=0; i<2; i++)
 			for(int j=0; j<2; j++)
 				matA[i][j] = scan.nextInt();
 
-		//Section 2: Determinant Code
-
+		//Section 2: Return Determinant
+		det = mat[0][0]*mat[1][1] - mat[1][0]*mat[0][1];
+		return det
 	}
 
 	public void addMatrix() {
@@ -170,6 +172,6 @@ public class MatrixCalculator {
 
 		MatrixCalculator matrix = new MatrixCalculator();
 
-		matrix.calculateDet();
+		matrix.Determinant(matA[][]);
 	}
 }
