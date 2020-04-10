@@ -14,7 +14,7 @@ public class MatrixCalculator {
 		dif = 0;
 	}
 
-	public void calculateDet(){
+	public int Determinant(){
 		//Section 1: Matrix Values
 		System.out.print("Enter values for '2x2' Matrix: ");
 		for(int i=0; i<2; i++)
@@ -22,6 +22,7 @@ public class MatrixCalculator {
 				matA[i][j] = scan.nextInt();
 
 		//Section 2: Determinant Code
+
 	}
 
 	public void addMatrix() {
