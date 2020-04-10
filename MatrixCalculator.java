@@ -13,6 +13,11 @@ public class MatrixCalculator {
 		sum = 0;
 		dif = 0;
 	}
+
+	public void calculateDet(){
+		
+	}
+
 	public void addMatrix() {
 
 
