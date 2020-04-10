@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class MatrixCalculator {
-
+	Scanner scan = new Scanner(System.in);
 	int[][] matA, matB, lösung;
 	int sum, dif;
 
@@ -14,7 +14,7 @@ public class MatrixCalculator {
 		dif = 0;
 	}
 	public void addMatrix() {
-		Scanner scan = new Scanner(System.in);
+
 
 		//Section 1: Enter Matrix Values
 		System.out.print("Enter values for Matrix A (dig1 dig2 ...): ");
@@ -33,7 +33,7 @@ public class MatrixCalculator {
 
 				for(int j=0; j<2; j++) {
 				//j is the #ofColumns in *mLös*
-				
+
 					sum = matA[i][j] + matB[i][j];
 
 					lösung[i][j] = sum;
@@ -55,7 +55,7 @@ public class MatrixCalculator {
 
 	}
 	public void subtMatrix() {
-		Scanner scan = new Scanner(System.in);
+
 
 		//Section 1: Enter Matrix Values
 		System.out.print("Enter values for Matrix A (dig1 dig2 ...): ");
@@ -100,7 +100,6 @@ public class MatrixCalculator {
 
 
 	public void multiMatrix() {
-		Scanner scan = new Scanner(System.in);
 
 		//Section 1: Enter Matrix Values
 		System.out.print("Enter values for Matrix A (dig1 dig2 ...): ");
