@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class MatrixCalculator {
 	Scanner scan = new Scanner(System.in);
 	int[][] matA, matB, lösung;
-	int sum, dif;
+	int sum, dif, det;
 
 	public MatrixCalculator() {
 
@@ -15,7 +15,13 @@ public class MatrixCalculator {
 	}
 
 	public void calculateDet(){
-		
+		//Section 1: Matrix Values
+		System.out.print("Enter values for '2x2' Matrix: ");
+		for(int i=0; i<2; i++)
+			for(int j=0; j<2; j++)
+				matA[i][j] = scan.nextInt();
+
+		//Section 2: Determinant Code
 	}
 
 	public void addMatrix() {
@@ -59,6 +65,7 @@ public class MatrixCalculator {
 		}
 
 	}
+
 	public void subtMatrix() {
 
 
@@ -102,7 +109,6 @@ public class MatrixCalculator {
 		}
 
 	}
-
 
 	public void multiMatrix() {
 
@@ -163,6 +169,6 @@ public class MatrixCalculator {
 
 		MatrixCalculator matrix = new MatrixCalculator();
 
-		matrix.subtMatrix();
+		matrix.calculateDet();
 	}
 }
